@@ -38,7 +38,7 @@ def se2(x,y,theta):
     return T
 
 def skew(w):
-    """returns a skew symmetric matric from a vector
+    """returns a skew symmetric matrix from a vector
     w is 3x1 array"""
     w1 = w[0]
     w2 = w[1]
