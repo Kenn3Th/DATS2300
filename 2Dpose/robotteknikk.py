@@ -180,7 +180,7 @@ def angvec2rotmat(theta,v):
     vector is 3 array vector, if it is not unit norm it will be normalized
     Uses Rogrigues formula
     """
-    s = np.sqrt(v.dot(v)) # compute length of v
+    s = np.sqrt(v.T.dot(v)) # compute length of v
     v = v/s # renormalize v. Now v has unit lenght
     I = np.eye(3) # identity matrix
     S = skew(v) # skew symmetrix matrix
